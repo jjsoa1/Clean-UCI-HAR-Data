@@ -47,9 +47,10 @@ merge_sets <- function (directory) {
   full_df <- set_activity_names(full_df, directory)
 }
 
-tidy_set <- merge_sets("UCI HAR Dataset")
-full_dt <- as.data.table(tidy_set)
-avg_tidy_set <- full_dt[, lapply(.SD, mean),by=c("Activity", "Subject")]
-
-write.table(tidy_set, "tidy_set.csv")
-write.table(avg_tidy_set, "avg_tidy_set.csv")
+generate_sets <- function() {
+  tidy_set <- merge_sets("UCI HAR Dataset")
+  full_dt <- as.data.table(tidy_set)
+  avg_tidy_set <- full_dt[, lapply(.SD, mean),by=c("Activity", "Subject")]
+  write.table(tidy_set, "tidy_set.csv")
+  write.table(avg_tidy_set, "avg_tidy_set.csv")
+}
