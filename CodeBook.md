@@ -16,6 +16,7 @@ It also provides and average calculation for each measurement organized by activ
 
 ## Code Book for tidy_set.csv
 The subject id for the measurements.
+
 "Subject"                      
 
 The activity performed during the measurement collection.
