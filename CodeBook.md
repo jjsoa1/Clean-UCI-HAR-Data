@@ -130,7 +130,7 @@ Weighted average of the frequency component of fBodyBodyGyroMag.
 
 "fBodyBodyGyroMag_meanFreq"    
 
-fBodyBodyGyroJerkMag is thebody gyroscope jerk magnitude measurement.
+fBodyBodyGyroJerkMag is the body gyroscope jerk magnitude measurement.
 
 "fBodyBodyGyroJerkMag_mean"     "fBodyBodyGyroJerkMag_std"     
 
